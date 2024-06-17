@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Oswald';
+    src: url('https://fonts.gstatic.com/s/oswald/v17/Y_TKV6o8WovbUd3m_X9a_a8.woff2') format('woff2');
+    unicode-range: U+0400-04FF;
+  }
+ 
+
+  
+  .card {
+    width: 280px;
+    min-height: 350px;
+    /*box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+  }
+
+  
+  /* При наведении на карточку - меняем цвет тени */
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(156,156,156);
+  }
+  
+  .card__top {
+    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    position: relative;
+    overflow: hidden; 
+  }
+  
+  /* Контейнер для картинки */
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+    transition: 0.3s;
+  }
+  
+  /* При наведении - увеличиваем картинку */
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+ 
+ 
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+    padding: 0px;
+  }
+  
+ 
+  
+  .card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: Oswald;
+    color: rgb(41, 31, 31);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-bottom: 30px;
+  }
+  
+  
+  
+
+
+  .card__title {
+    display: block;
+    margin: 0 auto;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 0%;
+    color: #414141;
+  }
+
+ 
+  
+  .card__title:hover {
+    color: #a39d9b;
+  }
+  
+
+
+
+  .cards {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1200px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 100px; 
+    row-gap: 80px; 
+    margin: 0 auto;
+  }
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+    column-gap: 25px;
+    row-gap: 50px; 
+  }
+  .card__title {
+    font-size: 25px;
+  }
+  .card__price--discount {
+    padding-left: 20px;
+  }
+
+  .card {
+    width: 180px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+  }
+  
+    .card{
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+    
+  
+
+  .card__price--discount {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+  }
+
+  .card__title {
+    font-size: 20px;
+  
+  }
+}

@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1; /* Занимает оставшееся пространство  ЧТОБЫ ФУТЕР УРОНИТЬ ВНИЗ*/
+  padding: 20px;
+}
+
+header{
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  header{
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.rostov{
+    font-size: 30px;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+    top: 60px;
+}
+
+.nomer-vr{
+  display: none;
+  width: 280px;
+  font-size: 30px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  position: absolute;
+  left: 1580px;
+  top: 10px;
+}
+
+.vr-rab{
+  display: none;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  position: absolute;
+  left: 1600px;
+  top: 60px;
+  color: grey;
+}
+
+.firstzag{
+  padding-top: 70px;
+  
+}
+.firstzag h1{
+  font-size: 40px;
+  font-family: Oswald;
+  text-align: center;
+  transform: scale(1);
+  width: 1700;
+
+}
+
+.firstzag p{
+  font-size: 30px;
+  font-family: Raleway;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  width: 1700px;
+    
+
+}
+
+.banner1 img{
+  max-width: 100%;
+  transform :scale(0.8);
+  display: block;
+  margin: 0 auto;
+  width: 1920px;
+  height: 700px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+
+}
+.images{
+  overflow: hidden;
+}
+
+
+
+.banner1 h1 {
+  font-size: 30px;
+  font-family: Oswald;
+  text-align: center;
+  transform: scale(1);
+  
+}
+
+.banner1 p {
+  font-size: 20px;
+  font-family: Raleway;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  width: 1700px;
+    
+}
+
+
+.banner2 img{
+  max-width: 100%;
+  transform :scale(0.8);
+  display: block;
+  margin: 0 auto;
+  width: 1550px;
+  height: 700px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  
+}
+
+.banner2 p {
+  font-size: 30px;
+  font-family: Raleway;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  width: 1700px;
+}
+
+.banner2 h1 {
+  font-size: 40px;
+  font-family: Oswald;
+  text-align: center;
+  
+}
+
+
+.banner3 img{
+  margin-left: 350px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 1650px;
+  height: 700px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  transform: scale(0.8);
+
+}
+
+.banner1 h1 {
+  font-size: 40px;
+  font-family: Oswald;
+  text-align: center;
+  
+}
+
+.banner1 P {
+  font-size: 30px;
+  font-family: Raleway;
+  text-align: center;
+  
+}
+
+.zagolovok1{
+  font-size: 20px;
+  font-family: Oswald;
+  text-align: center;
+  padding-bottom: 200px;
+  
+}
+.zagolovok1 p {
+
+  font-size: 30px;
+  font-family: Raleway;
+  margin: 0 auto;
+  width: 1700px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  cursor: pointer;
+}
+
+.image-container p{
+  font-weight: 500;
+}
+
+.image-info, .image-info2, .image-info3, .image-info4 {
+  position: relative;
+  width: 400x; 
+  text-align: center;
+}
+
+.image-info img, .image-info2 img, .image-info3 img, .image-info4 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.image-info:hover img, .image-info2:hover img, .image-info3:hover img, .image-info4:hover img {
+  opacity: 0;
+}
+.image-info.hover-image{
+  width: 10px;
+
+}
+
+.image-info .hover-image, .image-info2 .hover-image2, .image-info3 .hover-image3, .image-info4 .hover-image4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.image-info:hover .hover-image, .image-info2:hover .hover-image2, .image-info3:hover .hover-image3, .image-info4:hover .hover-image4 {
+  opacity: 1;
+}
+
+.image-info h3, .image-info2 h3, .image-info3 h3, .image-info4 h3 {
+  font-size: 30px;
+  font-family: Oswald;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+
+.image-info p, .image-info2 p, .image-info3 p, .image-info4 p {
+  font-size: 30px;
+  font-family: Raleway;
+  padding-top: 50px;
+  margin: auto;
+}
+
+
+
+
+@media (min-width: 1920px) {
+  .banner1, .banner2, .banner3{
+    transform: scale(1.);
+  }
+
+  .nomer-vr, .vr-rab{
+    left: 2150px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

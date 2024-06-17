@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+@media (max-width: 768px) {
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+.rostov {
+  display: none;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 20px;
+  top: 60px;
+}
+
+.nomer-vr {
+  display: none;
+  font-size: 30px;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  position: absolute;
+  right: 20px; 
+  top: 10px;
+}
+
+.vr-rab {
+  display: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  right: 20px; 
+  top: 60px;
+  color: grey;
+}
+
+.firstzag h1{
+  font-size: 20px;
+  width: 100%;
+}
+
+.firstzag p{
+  font-size: 18px;
+  width: 330px;
+  text-align: center;
+}
+
+/* Стили для баннеров */
+
+.banner1, .banner2, .banner3 {
+  text-align: center;
+}
+
+
+.banner1 img, .banner2 img, .banner3 img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px; 
+  padding-bottom: 20px;
+  overflow: hidden;
+  max-height: 150px;
+}
+
+.banner1 img {
+  width: 100%; 
+  height: auto; 
+  transform: scale(0.9);
+}
+
+.banner2 img, .banner3 img {
+  width: 100%; 
+  height: auto; 
+}
+
+.banner1 h1, .banner2 h1 {
+  font-size: 24px; 
+  font-family: Oswald;
+  transform: scale(1);
+  margin-bottom: 10px;
+}
+
+.banner1 p, .banner2 p {
+  font-size: 16px; 
+  margin: 0px auto; 
+  width: 100%;
+}
+
+/* Стили для раздела "О НАС" */
+
+.zagolovok1 h1{
+  font-size: 20px;
+  font-family: Oswald;
+  text-align: center;
+  padding-bottom: 10px; 
+  width: 100%;
+}
+
+.zagolovok1 p {
+  font-size: 18px; 
+  margin-top: 10px; 
+  width: 90%; 
+}
+
+/* Стили для товара */
+
+.image-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5px;
+  cursor: pointer;
+  
+}
+
+.image-info, .image-info2, .image-info3, .image-info4 {
+  position: relative;
+  width: 300px; 
+  height: 400px;
+  text-align: center;
+  margin-bottom: 20px; 
+  border-style: groove;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(1.);
+}
+
+.image-info img, .image-info2 img, .image-info3 img, .image-info4 img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  margin: 0px;
+  transition: all 0.3s ease;
+  transform: scale(0.6);
+}
+
+.image-info:hover img, .image-info2:hover img, .image-info3:hover img, .image-info4:hover img {
+  opacity: 0;
+}
+
+
+.image-info:hover .hover-image, .image-info2:hover .hover-image2, .image-info3:hover .hover-image3, .image-info4:hover .hover-image4 {
+  opacity: 1;
+}
+.image-info4{
+  display: none;
+}
+.image-info h3, .image-info2 h3, .image-info3 h3, .image-info4 h3 {
+  font-size: 20px; 
+  font-family: Oswald;
+  padding-top: 10px; 
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.image-info p, .image-info2 p, .image-info3 p, .image-info4 p {
+  font-size: 20px; 
+  padding-top: 10px; 
+}
+
+}
